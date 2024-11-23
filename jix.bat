@@ -1,14 +1,22 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:: Définir le répertoire contenant les fichiers HTML et ASPX
-set "directory=C:\1Energia\Web\ESOIv02\papamaman"
+set "search=<li><span class=\"icon icon-map-marker\"></span><span class=\"text\">Registered Office: Singapore<br />Head Office: Mumbai, India </span></li>"
+set "replace=<li><span class=\"icon icon-map-marker\"></span><span class=\"text\">Registered Office: Singapore<br />Head Office: Mumbai, India </span></li><script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5908571316079556\"  crossorigin=\"anonymous\"></script>"
+set "folderPath= C:\1Energia\Web\ESOIv02\"
+set "tempFile=%TEMP%\tempfile.txt"
 
-:: La ligne à ajouter dans le body
-set "line_to_add=<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5908571316079556' crossorigin='anonymous'></script>"
+rem Parcourir tous les fichiers .html, .php, et .aspx dans le dossier et sous-dossiers
+for /r "%folderPath%" %%f in (*.html *.php *.aspx) do (
+    rem Lire chaque fichier et effectuer le remplacement
+    (for /f "tokens=*" %%a in ('type "%%f"') do (
+        set "line=%%a"
+        set "line=!line:%search%=%replace%!"
+        echo(!line!
+    )) > "%tempFile%"
+    rem Remplacer le fichier original par le fichier temporaire
+    move /y "%tempFile%" "%%f" >nul
+)
 
-:: Appeler le script PowerShell
-powershell -ExecutionPolicy Bypass -File "C:\1Energia\Web\ESOIv02\papamaman\add_script.ps1" -directory "%directory%" -line_to_add "%line_to_add%"
-
-echo Line added to all HTML, ASPX, and ASPXC files.
-pause
+endlocal
+echo Remplacement terminé.
