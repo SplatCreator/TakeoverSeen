@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: Définir le répertoire contenant les fichiers HTML et ASPX
-set "directory=C:\1Energia\Web\ESOIv02\"
+set "directory=C:\1Energia\Web\ESOIv02\papamaman"
 
 :: La ligne à ajouter dans le body
 set "line_to_add=<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5908571316079556' crossorigin='anonymous'></script>"
