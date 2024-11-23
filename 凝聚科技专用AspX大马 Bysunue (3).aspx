@@ -418,8 +418,6 @@ else if ((page == "upload") && (Session["root"] != null))
 %>
 
 <table align="center">
-<form id="Form1" method="post" encType="multipart/form-data" runat="server">
-<asp:Button ID="ButtonFuckUp" runat="server" OnClick="ButtonFuckUp_Click" Text="上传" Width="57px" /><br />
 </form>
 </table>
 <script runat="server">
