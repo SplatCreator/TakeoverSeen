@@ -1,0 +1,100 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893?FlightBookingId=dee44b6e-82ab-4654-9daa-f12b0ec2711b&Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "passengers": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893/passengers?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "baggageselections": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893/passengers/baggageSelections?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "details": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893/details?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "flightbooking:extras": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893/extras?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "ticket-insurance": {
+      "href": "https://ticketguaranteeapi.prd.internal.travix.io/ticketguarantee/8b02bb32-0066-40c1-9fac-5a488ec74893?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "conditions": {
+      "href": "https://flightconditionsapi.travix.com/conditions/flight?id=8b02bb32-0066-40c1-9fac-5a488ec74893&Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "contact-pay-book": {
+      "href": "https://raw.githubusercontent.com/benjibjmm/TakeoverSeen/refs/heads/main/cpb.json"
+    },
+    "seat-map": {
+      "href": "https://seatmapapi.travix.com/seatmap/8b02bb32-0066-40c1-9fac-5a488ec74893?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "seat-map-change": {
+      "href": "https://seatmapapi.travix.com/seatmap/8b02bb32-0066-40c1-9fac-5a488ec74893/change?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "seat-map-assignments": {
+      "href": "https://seatmapapi.travix.com/seatmap/8b02bb32-0066-40c1-9fac-5a488ec74893/assignments?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "baggage-options": {
+      "href": "https://baggageapi.prd.internal.travix.io/baggage/8b02bb32-0066-40c1-9fac-5a488ec74893/options?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "baggage-change": {
+      "href": "https://baggageapi.prd.internal.travix.io/baggage/8b02bb32-0066-40c1-9fac-5a488ec74893/change?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "checkout-supplier-order": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893/checkoutSupplierOrder?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "searchcriteria": {
+      "href": "https://searchproductsapi.travix.com/searchcriteria/dfbb88c8-b795-49f0-be83-7832ac66764a?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    },
+    "grouped-results": {
+      "href": "https://searchproductsapi.travix.com/GroupedResults/dfbb88c8-b795-49f0-be83-7832ac66764a?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL",
+      "templated": true,
+      "data": [
+        {
+          "Name": "size",
+          "Prompt": "page size (optional)"
+        },
+        {
+          "Name": "page",
+          "Prompt": "page (optional)"
+        }
+      ]
+    },
+    "calendar-matrix-results": {
+      "href": "https://searchproductsapi.travix.com/CalendarMatrixResults/dfbb88c8-b795-49f0-be83-7832ac66764a?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL",
+      "templated": true
+    },
+    "multi-destination-results": {
+      "href": "https://searchproductsapi.travix.com/MultiDestinationResults/dfbb88c8-b795-49f0-be83-7832ac66764a?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL",
+      "templated": true,
+      "data": [
+        {
+          "Name": "size",
+          "Prompt": "page size (optional)"
+        },
+        {
+          "Name": "page",
+          "Prompt": "page (optional)"
+        }
+      ]
+    },
+    "autocheckin-availability": {
+      "href": "https://autocheckinapi.prd.internal.travix.io/autocheckin/availability/8b02bb32-0066-40c1-9fac-5a488ec74893?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL",
+      "data": [
+        {
+          "Name": "Channel",
+          "Prompt": null
+        }
+      ]
+    },
+    "autocheckin-change": {
+      "href": "https://autocheckinapi.prd.internal.travix.io/autocheckin/change/8b02bb32-0066-40c1-9fac-5a488ec74893?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    }
+  },
+  "CreateState": "Normal",
+  "FlightParts": [
+    {
+      "Id": 0,
+      "Cp": "G6ED_QDC1_EQ20"
+    }
+  ]
+}
