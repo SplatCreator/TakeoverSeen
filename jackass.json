@@ -1,0 +1,261 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893/details?Language=en&Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL"
+    }
+  },
+  "IsCombinedFlight": false,
+  "FlightType": "Return",
+  "ChangeAlerts": [],
+  "Fares": [
+    {
+      "CurrencyCode": "EUR",
+      "Total": 0,
+      "PreDiscountTotal": 0,
+      "CreditCardSurcharge": 0,
+      "DisplayFare": {
+        "Total": 0,
+        "PreviousTotal": 0,
+        "PriceDifference": 0,
+        "TicketPrice": 0,
+        "AirportTax": 0,
+        "Discount": 0,
+        "DiscountDescription": "Special Discount",
+        "FareMarkup": null,
+        "PreviousTotalForBooking": null,
+        "PriceDifferenceForBooking": null
+      },
+      "ExcludedCosts": [
+        {
+          "Code": "Reservation Cost",
+          "Key": "RESERVATION_COST",
+          "AppliesTo": "Order",
+          "Amount": 0
+        }
+      ],
+      "PassengerFares": [
+        {
+          "NrOfPax": 1,
+          "PaxType": "Adult",
+          "TicketPrice": 0,
+          "AirportTax": 0,
+          "Discount": 0,
+          "DiscountDescription": "Special Discount",
+          "TotalOnePax": 0,
+          "Total": 0,
+          "FareMarkup": null,
+          "TaxMarkup": 0,
+          "FuelSurchargeTotal": null,
+          "AirTransportationPrice": null,
+          "TaxesWithoutFuelSurchargeTotal": null,
+          "Taxes": null,
+          "DynamicMargin": 0,
+          "DynamicTaxMargin": 0,
+          "PreDiscountTotal": 0
+        }
+      ],
+      "FareType": "Published",
+      "BrandName": "",
+      "HaulType": "LongHaul",
+      "Costs": {
+        "CurrencyCode": "EUR",
+        "Items": [
+          {
+            "Amount": 0,
+            "AmountPerPerson": null,
+            "Tax": null,
+            "DiscountPerPerson": 0,
+            "CostItemType": "ReservationCost",
+            "Placeholders": null,
+            "DisplayName": null
+          },
+          {
+            "Amount": 0,
+            "AmountPerPerson": 0,
+            "Tax": 0,
+            "DiscountPerPerson": 0,
+            "CostItemType": "AirlineTicket",
+            "Placeholders": [
+              {
+                "Code": "Type",
+                "Name": "Type",
+                "Value": "Adult"
+              },
+              {
+                "Code": "Quantity",
+                "Name": "Quantity",
+                "Value": "1"
+              }
+            ],
+            "DisplayName": null
+          }
+        ]
+      }
+    }
+  ],
+  "Carrier": {
+    "Code": "EY",
+    "DisplayName": "Etihad Airways"
+  },
+  "Provider": "1A",
+  "Legs": [
+    {
+      "Id": 0,
+      "Carrier": {
+        "Code": "EY",
+        "DisplayName": "Etihad Airways"
+      },
+      "FareType": "Published",
+      "Direction": "Outbound",
+      "NrOfStops": 0,
+      "Duration": "0620",
+      "DepartureDateTime": "2024-12-17T21:40:00",
+      "ArrivalDateTime": "2024-12-18T07:00:00",
+      "DepartureAirport": {
+        "Code": "AMS",
+        "Name": "Schiphol",
+        "City": "Amsterdam",
+        "CountryCode": "NL",
+        "DisplayName": "Amsterdam (Schiphol), AMS, Netherlands"
+      },
+      "ArrivalAirport": {
+        "Code": "AUH",
+        "Name": "Abu Dhabi Intl. Apt.",
+        "City": "Abu Dhabi",
+        "CountryCode": "AE",
+        "DisplayName": "Abu Dhabi (Abu Dhabi Intl. Apt.), AUH, United Arab Emirates"
+      },
+      "Segments": [
+        {
+          "Id": 0,
+          "NumberOfStops": 0,
+          "Duration": "0620",
+          "DepartureDateTime": "2024-12-17T21:40:00",
+          "ArrivalDateTime": "2024-12-18T07:00:00",
+          "FlightNumber": "42",
+          "Distance": 5196,
+          "Class": "Economy",
+          "BookingClass": "B",
+          "Plane": "Boeing 787-100",
+          "Carrier": {
+            "Code": "EY",
+            "DisplayName": "Etihad Airways"
+          },
+          "Departure": {
+            "Code": "AMS",
+            "Name": "Schiphol",
+            "City": "Amsterdam",
+            "CountryCode": "NL",
+            "DisplayName": "Amsterdam (Schiphol), AMS, Netherlands"
+          },
+          "Arrival": {
+            "Code": "AUH",
+            "Name": "Abu Dhabi Intl. Apt.",
+            "City": "Abu Dhabi",
+            "CountryCode": "AE",
+            "DisplayName": "Abu Dhabi (Abu Dhabi Intl. Apt.), AUH, United Arab Emirates"
+          },
+          "DaysEarlier": 0,
+          "DaysLater": 1,
+          "DepartureTerminal": null,
+          "ArrivalTerminal": null,
+          "CodeShareInfo": null,
+          "CommercialCodeShare": null,
+          "TransferInfo": null,
+          "TechnicalStop": null,
+          "TransferType": null,
+          "DisplayCarrier": "EY"
+        }
+      ],
+      "CabinClass": "Economy",
+      "NrOfSeatsAvailable": 0,
+      "DisplayCarrier": "EY"
+    },
+    {
+      "Id": 1,
+      "Carrier": {
+        "Code": "EY",
+        "DisplayName": "Etihad Airways"
+      },
+      "FareType": "Published",
+      "Direction": "Inbound",
+      "NrOfStops": 0,
+      "Duration": "0730",
+      "DepartureDateTime": "2024-12-18T14:25:00",
+      "ArrivalDateTime": "2024-12-18T18:55:00",
+      "DepartureAirport": {
+        "Code": "AUH",
+        "Name": "Abu Dhabi Intl. Apt.",
+        "City": "Abu Dhabi",
+        "CountryCode": "AE",
+        "DisplayName": "Abu Dhabi (Abu Dhabi Intl. Apt.), AUH, United Arab Emirates"
+      },
+      "ArrivalAirport": {
+        "Code": "AMS",
+        "Name": "Schiphol",
+        "City": "Amsterdam",
+        "CountryCode": "NL",
+        "DisplayName": "Amsterdam (Schiphol), AMS, Netherlands"
+      },
+      "Segments": [
+        {
+          "Id": 1,
+          "NumberOfStops": 0,
+          "Duration": "0730",
+          "DepartureDateTime": "2024-12-18T14:25:00",
+          "ArrivalDateTime": "2024-12-18T18:55:00",
+          "FlightNumber": "41",
+          "Distance": 5196,
+          "Class": "Economy",
+          "BookingClass": "M",
+          "Plane": "Boeing 787-100",
+          "Carrier": {
+            "Code": "EY",
+            "DisplayName": "Etihad Airways"
+          },
+          "Departure": {
+            "Code": "AUH",
+            "Name": "Abu Dhabi Intl. Apt.",
+            "City": "Abu Dhabi",
+            "CountryCode": "AE",
+            "DisplayName": "Abu Dhabi (Abu Dhabi Intl. Apt.), AUH, United Arab Emirates"
+          },
+          "Arrival": {
+            "Code": "AMS",
+            "Name": "Schiphol",
+            "City": "Amsterdam",
+            "CountryCode": "NL",
+            "DisplayName": "Amsterdam (Schiphol), AMS, Netherlands"
+          },
+          "DaysEarlier": 0,
+          "DaysLater": 0,
+          "DepartureTerminal": null,
+          "ArrivalTerminal": null,
+          "CodeShareInfo": null,
+          "CommercialCodeShare": null,
+          "TransferInfo": null,
+          "TechnicalStop": null,
+          "TransferType": null,
+          "DisplayCarrier": "EY"
+        }
+      ],
+      "CabinClass": "Economy",
+      "NrOfSeatsAvailable": 0,
+      "DisplayCarrier": "EY"
+    }
+  ],
+  "FarePromoTexts": [],
+  "PriceComments": [],
+  "BusinessMessages": [
+    {
+      "Code": "HANDBAGGAGE",
+      "Placeholders": null
+    }
+  ],
+  "LuggageInfos": [],
+  "FlightParts": null,
+  "UpsellProductType": "None",
+  "EnableSingleOMS": true,
+  "CustomerPaymentFlow": "Travix",
+  "IsVirtualInterlining": false
+}
