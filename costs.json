@@ -1,0 +1,110 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/costs/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    }
+  },
+  "OrderNumber": "CHNL-29784023",
+  "OrderState": "OPEN",
+  "FlightParts": [
+    {
+      "Id": 0,
+      "Code": "Outbound",
+      "Carrier": {
+        "Code": "EY",
+        "DisplayName": "Etihad Airways"
+      },
+      "DepartureDateTime": "2024-12-17T21:40:00",
+      "ArrivalDateTime": "2024-12-18T18:55:00",
+      "DepartureAirport": {
+        "Code": "AMS",
+        "Name": "Schiphol",
+        "City": "Amsterdam",
+        "CountryCode": "NL",
+        "DisplayName": "Amsterdam (Schiphol), AMS, Netherlands"
+      },
+      "ArrivalAirport": {
+        "Code": "AUH",
+        "Name": "Abu Dhabi Intl. Apt.",
+        "City": "Abu Dhabi",
+        "CountryCode": "AE",
+        "DisplayName": "Abu Dhabi (Abu Dhabi Intl. Apt.), AUH, United Arab Emirates"
+      },
+      "IsReturnFlight": true
+    }
+  ],
+  "Costs": [
+    {
+      "CurrencyCode": "EUR",
+      "Total": 1.,
+      "TotalTicketsPrice": 1,
+      "Items": [
+        {
+          "DisplayName": "1 x Flight ticket, Adult(s)",
+          "SupplierProductId": null,
+          "Amount": 1,
+          "AmountWithoutMarkup": null,
+          "FareMarkup": null,
+          "Markup": null,
+          "AmountPerPerson": 1,
+          "AmountPerPersonWithoutMarkup": null,
+          "Tax": 0,
+          "DiscountPerPerson": 0,
+          "AmountAppliedTo": null,
+          "CostItemType": "AirlineTicket",
+          "ProductName": null,
+          "ProductType": null,
+          "SupplierName": null,
+          "Placeholders": [
+            {
+              "Name": "Type",
+              "Value": "Adult"
+            },
+            {
+              "Name": "Quantity",
+              "Value": "1"
+            }
+          ],
+          "FlightPart": null,
+          "ShoppingCartItemId": null,
+          "UpsellMarkup": null,
+          "ProductData": null,
+          "PreDiscountTotal": 1,
+          "BundleCode": "Basic"
+        },
+        {
+          "DisplayName": "Flight booking fee",
+          "SupplierProductId": null,
+          "Amount": 0,
+          "AmountWithoutMarkup": null,
+          "FareMarkup": null,
+          "Markup": null,
+          "AmountPerPerson": null,
+          "AmountPerPersonWithoutMarkup": null,
+          "Tax": null,
+          "DiscountPerPerson": null,
+          "AmountAppliedTo": "Order",
+          "CostItemType": "Reservation",
+          "ProductName": null,
+          "ProductType": null,
+          "SupplierName": null,
+          "Placeholders": null,
+          "FlightPart": null,
+          "ShoppingCartItemId": null,
+          "UpsellMarkup": null,
+          "ProductData": null,
+          "PreDiscountTotal": 0,
+          "BundleCode": null
+        }
+      ]
+    }
+  ],
+  "NonMorCosts": [],
+  "PostPaidServices": [],
+  "Bundle": {
+    "AirlineBundleCode": null,
+    "TravixBundleCode": null,
+    "AirlineBrandName": "",
+    "Items": []
+  }
+}
