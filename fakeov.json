@@ -1,0 +1,29 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/summary/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "flight:details": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893/details?affiliate=CheapticketsNL&language=EN&cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "flight:passengers": {
+      "href": "https://flightapi.travix.com/flight/8b02bb32-0066-40c1-9fac-5a488ec74893/passengers?affiliate=CheapticketsNL&language=EN&cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "flightbooking:conditions": {
+      "href": "https://flightconditionsapi.travix.com/conditions/flight?id=8b02bb32-0066-40c1-9fac-5a488ec74893&affiliate=CheapticketsNL&language=EN&cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "checkout:costs": {
+      "href": "https://raw.githubusercontent.com/benjibjmm/TakeoverSeen/refs/heads/main/fakepay.json",
+      "templated": true,
+      "data": [
+        {
+          "name": "exclude",
+          "prompt": "exclude cost item types: reservation (optional)"
+        }
+      ]
+    },
+    "checkout:contact": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/contact/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    }
+  }
+}
