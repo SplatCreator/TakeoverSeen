@@ -1,0 +1,159 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "checkout:confirmation-v3": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/confirmationv3/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "shoppingcart:get": {
+      "href": "https://shoppingcart.travix.com/carts/66d586df-01ae-4af0-b2f7-c5ca5b64fb40"
+    },
+    "bundles:get-selected": {
+      "href": "https://bundlesapi.prd.internal.travix.io/bundles/selectedbundle?orderNumber=CHNL-29784023"
+    },
+    "checkout:contact": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/contact/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "checkout:voucher-options": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/voucheroptions/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "checkout:booking-overview": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/summary/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "checkout:companyconditions": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/companyconditions/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "checkout:paymentoptions": {
+      "href": "https://paymentgateway-tpp.prd.travix.com/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/af-CheapticketsNL/paymentoptions/FlightBookingOrder/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "checkout:servicepackages": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/servicepackages/a50669ba-3d07-4c62-bb64-deaa0495e097"
+    },
+    "shoppingcart:add-item": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/shoppingcart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40"
+    },
+    "shoppingcart:clear-items": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/shoppingcart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40"
+    },
+    "shoppingcart:remove-item": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/shoppingcart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/items/{itemId}"
+    },
+    "shoppingcart:change-quantity": {
+      "href": "https://api.cheaptickets.nl/checkout/l-EN/cid-0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1/shoppingcart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/items/{itemId}/quantity"
+    },
+    "cfar:shoppingcart-add-item": {
+      "href": "https://cfarhub.prd.internal.travix.io/cart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/add?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderId=a50669ba-3d07-4c62-bb64-deaa0495e097&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893&customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "cfar:shoppingcart-remove-item": {
+      "href": "https://cfarhub.prd.internal.travix.io/cart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/remove?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderId=a50669ba-3d07-4c62-bb64-deaa0495e097&orderNumber=CHNL-29784023&customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "cfar:offer": {
+      "href": "https://cfarhub.prd.internal.travix.io/offer?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderId=a50669ba-3d07-4c62-bb64-deaa0495e097&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893&customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "bundles:select": {
+      "href": "https://bundlesapi.prd.internal.travix.io/bundles/{code}/select?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&shoppingCartId=66d586df-01ae-4af0-b2f7-c5ca5b64fb40&orderId=a50669ba-3d07-4c62-bb64-deaa0495e097&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893&customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "bundles:get": {
+      "href": "https://bundlesapi.prd.internal.travix.io/bundles?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderId=a50669ba-3d07-4c62-bb64-deaa0495e097&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893&customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "refundprotecthub:shop": {
+      "href": "https://refundprotecthub.prd.internal.travix.io/shop?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893&orderId=a50669ba-3d07-4c62-bb64-deaa0495e097&customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "refundprotecthub:add": {
+      "href": "https://refundprotecthub.prd.internal.travix.io/cart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/add?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "refundprotecthub:remove": {
+      "href": "https://refundprotecthub.prd.internal.travix.io/cart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/remove?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "insurancectchub:shop": {
+      "href": "https://ctcinsuranceshub.prd.internal.travix.io/shop?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893&orderId=a50669ba-3d07-4c62-bb64-deaa0495e097&customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "insurancectchub:add": {
+      "href": "https://ctcinsuranceshub.prd.internal.travix.io/cart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/add?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "insurancectchub:remove": {
+      "href": "https://ctcinsuranceshub.prd.internal.travix.io/cart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/remove?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "dpoapi:ancillaries": {
+      "href": "https://dpoapi.prd.internal.travix.io/products/dynamicoffer?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderId=a50669ba-3d07-4c62-bb64-deaa0495e097&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893&customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1"
+    },
+    "ticketguarantee:offer": {
+      "href": "https://ticketguarantee-service.prd.internal.travix.io/offer?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "ticketguarantee:shoppingcart-add-remove-item": {
+      "href": "https://ticketguarantee-service.prd.internal.travix.io/cart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/update?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&orderNumber=CHNL-29784023&flightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "feeshub:get": {
+      "href": "https://feeshub.prd.internal.travix.io/fee/{type}?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&FlightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "feeshub:add": {
+      "href": "https://feeshub.prd.internal.travix.io/fee/additem/a50669ba-3d07-4c62-bb64-deaa0495e097/66d586df-01ae-4af0-b2f7-c5ca5b64fb40?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "feeshub:remove": {
+      "href": "https://feeshub.prd.internal.travix.io/fee/removeitem/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/{itemId}?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "fdchub:shop": {
+      "href": "https://fdchub.prd.internal.travix.io/fdc/shop?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&FlightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "fdchub:add": {
+      "href": "https://fdchub.prd.internal.travix.io/fdc/add/a50669ba-3d07-4c62-bb64-deaa0495e097/66d586df-01ae-4af0-b2f7-c5ca5b64fb40?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&FlightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "fdchub:remove": {
+      "href": "https://fdchub.prd.internal.travix.io/fdc/remove/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/{itemId}?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "servicepackagehub:shop": {
+      "href": "https://servicepackagehub.prd.internal.travix.io/servicepackage/shop?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&FlightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "servicepackagehub:add": {
+      "href": "https://servicepackagehub.prd.internal.travix.io/servicepackage/add/a50669ba-3d07-4c62-bb64-deaa0495e097/66d586df-01ae-4af0-b2f7-c5ca5b64fb40?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&FlightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "servicepackagehub:remove": {
+      "href": "https://servicepackagehub.prd.internal.travix.io/servicepackage/remove/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/{itemId}?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "carhub:shop": {
+      "href": "https://carhub.prd.internal.travix.io/car/shop?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&FlightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "carhub:details": {
+      "href": "https://carhub.prd.internal.travix.io/car/details?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "carhub:add": {
+      "href": "https://carhub.prd.internal.travix.io/car/add/a50669ba-3d07-4c62-bb64-deaa0495e097/66d586df-01ae-4af0-b2f7-c5ca5b64fb40?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&FlightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "carhub:add-smartblock": {
+      "href": "https://carhub.prd.internal.travix.io/smartblock/add/a50669ba-3d07-4c62-bb64-deaa0495e097/66d586df-01ae-4af0-b2f7-c5ca5b64fb40?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN&FlightId=8b02bb32-0066-40c1-9fac-5a488ec74893"
+    },
+    "carhub:remove": {
+      "href": "https://carhub.prd.internal.travix.io/car/remove/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/{itemId}?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "autocheckinapi:availability": {
+      "href": "https://autocheckinapi.prd.internal.travix.io/autocheckin/availability/8b02bb32-0066-40c1-9fac-5a488ec74893?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "autocheckinapi:add": {
+      "href": "https://autocheckinapi.prd.internal.travix.io/autocheckin/8b02bb32-0066-40c1-9fac-5a488ec74893/shoppingcart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "autocheckinapi:remove": {
+      "href": "https://autocheckinapi.prd.internal.travix.io/autocheckin/8b02bb32-0066-40c1-9fac-5a488ec74893/shoppingcart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "baggageapi:options": {
+      "href": "https://baggageapi.prd.internal.travix.io/baggage/8b02bb32-0066-40c1-9fac-5a488ec74893/options?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "baggageapi:change": {
+      "href": "https://baggageapi.prd.internal.travix.io/baggage/8b02bb32-0066-40c1-9fac-5a488ec74893/shoppingcart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/change?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "seatmapapi:options": {
+      "href": "https://seatmapapi.prd.internal.travix.io/seatmap/8b02bb32-0066-40c1-9fac-5a488ec74893?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "seatmapapi:change": {
+      "href": "https://seatmapapi.prd.internal.travix.io/seatmap/8b02bb32-0066-40c1-9fac-5a488ec74893/shoppingcart/66d586df-01ae-4af0-b2f7-c5ca5b64fb40/change?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "seatmapapi:assignments": {
+      "href": "https://seatmapapi.prd.internal.travix.io/seatmap/8b02bb32-0066-40c1-9fac-5a488ec74893/assignments?Cid=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&Affiliate=CheapticketsNL&Language=EN"
+    },
+    "shoppingcontext:context": {
+      "href": "https://shoppingcontext.travix.com/context/a50669ba-3d07-4c62-bb64-deaa0495e097?customerId=0a3f7418-64fd-43fb-ac0c-3d3aa90cb8e1&affiliate=CheapticketsNL&language=EN"
+    }
+  },
+  "OrderNumber": "CHNL-29784023",
+  "OrderState": "OPEN"
+}
